@@ -1,0 +1,69 @@
+/* ===========================
+   ICOVRI 10 — Publication & Prize
+   =========================== */
+
+#publication { background: var(--bg-page); }
+
+.pub-box {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  padding: 60px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pub-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #083b45;
+  margin-bottom: 16px;
+}
+
+.pub-box p {
+  font-size: 15px;
+  color: #2a6070;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.pub-box a {
+  color: var(--teal-bright);
+  text-decoration: none;
+  border-bottom: 1px solid var(--teal-bright);
+}
+
+.scopus-badge {
+  display: inline-block;
+  background: rgba(201, 162, 39, .12);
+  border: 1px solid #c9a227;
+  color: #c9a227;
+  padding: 5px 18px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 14px;
+}
+
+.prize-banner {
+  background: linear-gradient(135deg, #9a7010, #c9a227, #e8c96a);
+  padding: 40px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.prize-banner h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: #083b45;
+  margin-bottom: 8px;
+}
+
+.prize-banner p {
+  color: #083b45;
+  font-size: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ICOVRI 10 – The Tenth International Conference of the Veterinary Research Institute</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Tajawal:wght@300;400;500;700&family=Barlow+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Styles — load order matters: variables first, then base, then components -->
+  <link rel="stylesheet" href="css/variables.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/navbar.css"/>
+  <link rel="stylesheet" href="css/hero.css"/>
+  <link rel="stylesheet" href="css/countdown.css"/>
+  <link rel="stylesheet" href="css/about.css"/>
+  <link rel="stylesheet" href="css/topics.css"/>
+  <link rel="stylesheet" href="css/fees.css"/>
+  <link rel="stylesheet" href="css/publication.css"/>
+  <link rel="stylesheet" href="css/register.css"/>
+  <link rel="stylesheet" href="css/venues.css"/>
+  <link rel="stylesheet" href="css/footer.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body>
+
+<!-- ============================================================
+     LANGUAGE BAR
+     ============================================================ -->
+<div id="lang-bar">
+  <button class="lang-btn active" id="btn-en">EN</button>
+  <button class="lang-btn"        id="btn-ar">عربي</button>
+</div>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <span class="nav-logo-text">ICOVRI 10</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about"       class="en-only">About</a>       <a href="#about"       class="ar-only">عن المؤتمر</a></li>
+      <li><a href="#topics"      class="en-only">Topics</a>      <a href="#topics"      class="ar-only">المحاور</a></li>
+      <li><a href="#fees"        class="en-only">Fees</a>        <a href="#fees"        class="ar-only">الرسوم</a></li>
+      <li><a href="#publication" class="en-only">Publication</a> <a href="#publication" class="ar-only">النشر</a></li>
+      <li><a href="#venues"      class="en-only">Venues</a>      <a href="#venues"      class="ar-only">المواقع</a></li>
+      <li>
+        <a href="#register" class="btn-primary nav-register en-only">Register</a>
+        <a href="#register" class="btn-primary nav-register ar-only">التسجيل</a>
+      </li>
+    </ul>
+    <div class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about"       class="en-only">About</a>       <a href="#about"       class="ar-only">عن المؤتمر</a>
+  <a href="#topics"      class="en-only">Topics</a>      <a href="#topics"      class="ar-only">المحاور</a>
+  <a href="#fees"        class="en-only">Fees</a>        <a href="#fees"        class="ar-only">الرسوم</a>
+  <a href="#publication" class="en-only">Publication</a> <a href="#publication" class="ar-only">النشر</a>
+  <a href="#venues"      class="en-only">Venues</a>      <a href="#venues"      class="ar-only">المواقع</a>
+  <a href="#register"    class="en-only" style="color:#c9a227;font-weight:700;">Register Now</a>
+  <a href="#register"    class="ar-only" style="color:#c9a227;font-weight:700;">سجل الآن</a>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-particles" id="particles"></div>
+
+  <div class="hero-content fade-in visible">
+    <div class="hero-badge en-only">The 10th I-COVRI · September 27–30, 2026 · Egypt</div>
+    <div class="hero-badge ar-only">المؤتمر الدولى العاشر · ٢٧–٣٠ سبتمبر ٢٠٢٦ · مصر</div>
+
+    <h1 class="hero-title en-only">
+      The Tenth International Conference<br>of the Veterinary Research Institute
+    </h1>
+    <h1 class="hero-title ar-only">
+      المؤتمر الدولى العاشر<br>لمعهد البحوث البيطرية
+    </h1>
+
+    <p class="hero-subtitle">ICOVRI 10</p>
+    <p class="hero-theme en-only">"The Light that Guides Science to Lead"</p>
+    <p class="hero-theme ar-only">"النور الذي يهدي العلم ليقود"</p>
+
+    <div class="hero-venues">
+      <div class="venue-box">
+        <div class="venue-date en-only">27 September 2026</div>
+        <div class="venue-date ar-only">٢٧ سبتمبر ٢٠٢٦</div>
+        <div class="venue-name en-only">Al Manara International Conference Center</div>
+        <div class="venue-name ar-only">مركز المنارة للمؤتمرات الدولية</div>
+        <div class="venue-city en-only">Axis of Field Marshal Tantawy · New Cairo, Egypt</div>
+        <div class="venue-city ar-only">محور المشير طنطاوي · القاهرة الجديدة</div>
+      </div>
+      <div class="venue-box">
+        <div class="venue-date en-only">28–30 September 2026</div>
+        <div class="venue-date ar-only">٢٨–٣٠ سبتمبر ٢٠٢٦</div>
+        <div class="venue-name en-only">Rixos Al Montaza Alexandria</div>
+        <div class="venue-name ar-only">ريكسوس المنتزه الإسكندرية</div>
+        <div class="venue-city en-only">Alexandria, Egypt</div>
+        <div class="venue-city ar-only">الإسكندرية، مصر</div>
+      </div>
+    </div>
+
+    <div class="hero-ctas">
+      <a href="#register" class="btn-primary en-only">Register Now</a>
+      <a href="#register" class="btn-primary ar-only">سجل الآن</a>
+      <a href="#topics"   class="btn-outline en-only">Conference Topics</a>
+      <a href="#topics"   class="btn-outline ar-only">محاور المؤتمر</a>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     COUNTDOWN
+     ============================================================ -->
+<div id="countdown">
+  <div class="countdown-inner">
+    <div class="countdown-label en-only">Conference begins in</div>
+    <div class="countdown-label ar-only">ينطلق المؤتمر خلال</div>
+    <div class="countdown-units">
+      <div class="countdown-unit">
+        <div class="countdown-num" id="cd-days">--</div>
+        <div class="countdown-unit-label en-only">Days</div>
+        <div class="countdown-unit-label ar-only">يوم</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="countdown-num" id="cd-hours">--</div>
+        <div class="countdown-unit-label en-only">Hours</div>
+        <div class="countdown-unit-label ar-only">ساعة</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="countdown-num" id="cd-mins">--</div>
+        <div class="countdown-unit-label en-only">Minutes</div>
+        <div class="countdown-unit-label ar-only">دقيقة</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="countdown-num" id="cd-secs">--</div>
+        <div class="countdown-unit-label en-only">Seconds</div>
+        <div class="countdown-unit-label ar-only">ثانية</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     LOGOS STRIP
+     ============================================================ -->
+<div class="logos-strip">
+  <div class="logos-inner">
+    <div class="logo-item" title="Ministry of Higher Education and Scientific Research">
+      <img src="assets/logo-ministry.jpeg" alt="Ministry of Higher Education" onerror="this.style.display='none'"/>
+    </div>
+    <div class="logo-item" title="National Research Centre">
+      <img src="assets/logo-nrc.jpeg" alt="National Research Centre" onerror="this.style.display='none'"/>
+    </div>
+    <div class="logo-item" title="Veterinary Research Institute">
+      <img src="assets/logo-vri.jpeg" alt="Veterinary Research Institute" onerror="this.style.display='none'"/>
+    </div>
+    <div class="logo-item" title="ICOVRI 10">
+      <img src="assets/logo-icovri.jpeg" alt="ICOVRI 10" onerror="this.style.display='none'"/>
+    </div>
+    <div class="logo-item" title="Advanced Veterinary Medical Association">
+      <img src="assets/logo-avma.jpeg" alt="AVMA" onerror="this.style.display='none'"/>
+    </div>
+    <div class="logo-item" title="Egyptian Veterinary Association for Buffalo Development">
+      <img src="assets/logo-evabd.jpeg" alt="EVABD" onerror="this.style.display='none'"/>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid fade-in">
+
+      <!-- Chairman message -->
+      <div class="about-text">
+        <div class="section-label en-only">Message from the Chairman</div>
+        <div class="section-label ar-only">كلمة رئيس المؤتمر</div>
+        <h2 class="section-title en-only">Welcome to <em>ICOVRI 10</em></h2>
+        <h2 class="section-title ar-only">أهلاً بكم في <em>المؤتمر العاشر</em></h2>
+        <div class="section-divider"></div>
+
+        <div class="en-only">
+          <p>It is a profound honor to welcome you to the 10th International Conference of the Veterinary Research Institute (ICOVRI 10). As we gather in Egypt, our mission transcends traditional boundaries, driven by our core theme: <strong>"The Light that Guides, Science to Lead"</strong>.</p>
+          <p>At the heart of this year's scientific program is the <strong>Immune Foundation</strong>, which serves as the bedrock of our understanding and response to global health challenges. By prioritizing Veterinary Immunology and Biotechnology, we aim to strengthen the <strong>One Health approach</strong>—recognizing that the health of animals, people, and our shared environment is inextricably linked.</p>
+          <p>Through this conference, we aspire to illuminate new pathways in vaccine development and diagnostic innovation, ensuring that science remains the steady light leading us toward a healthier and more resilient future for all.</p>
+        </div>
+        <div class="ar-only">
+          <p>يسعدني أن أرحب بكم في المؤتمر الدولي العاشر لمعهد البحوث البيطرية. ونحن نجتمع في مصر، فإن رسالتنا تتخطى الحدود التقليدية، مدفوعين بشعارنا: <strong>"النور الذي يهدي العلم ليقود"</strong>.</p>
+          <p>يُشكل <strong>الأساس المناعي</strong> حجر الزاوية في برنامجنا العلمي هذا العام. ونهدف إلى تعزيز <strong>نهج الصحة الواحدة</strong> — إدراكًا منا أن صحة الحيوانات والإنسان والبيئة مترابطة بشكل لا ينفصم.</p>
+          <p>نطمح من خلال هذا المؤتمر إلى إضاءة مسارات جديدة في تطوير اللقاحات والابتكار التشخيصي، مما يضمن بقاء العلم ضوءًا ثابتًا يقودنا نحو مستقبل أكثر صحة وازدهارًا.</p>
+        </div>
+
+        <div class="chairman-sig">
+          <strong>Prof. Dr. Khalid Abdel-Hameed</strong>
+          <span class="en-only">Dean of the Veterinary Research Institute &amp; Conference Chairman</span>
+          <span class="ar-only">عميد معهد البحوث البيطرية ورئيس المؤتمر</span>
+        </div>
+      </div>
+
+      <!-- Stats + Patronage -->
+      <div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">10th</div>
+            <div class="stat-label en-only">Edition</div>
+            <div class="stat-label ar-only">النسخة</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">4</div>
+            <div class="stat-label en-only">Days of Science</div>
+            <div class="stat-label ar-only">أيام علمية</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">10</div>
+            <div class="stat-label en-only">Scientific Topics</div>
+            <div class="stat-label ar-only">محور علمي</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">5</div>
+            <div class="stat-label en-only">Research Prizes</div>
+            <div class="stat-label ar-only">جوائز بحثية</div>
+          </div>
+        </div>
+
+        <div class="patronage-card">
+          <div class="patronage-title en-only">Leadership &amp; Patronage</div>
+          <div class="patronage-title ar-only">الرعاية والقيادة</div>
+
+          <div class="patronage-person">
+            <div class="patronage-role en-only">Under Patronage of</div>
+            <div class="patronage-role ar-only">تحت رعاية</div>
+            <div class="patronage-name en-only">Prof. Dr. Abdelaziz Konsowa</div>
+            <div class="patronage-name ar-only">أ.د/ عبد العزيز قنصوه</div>
+            <div class="patronage-desc en-only">Minister of Higher Education and Scientific Research</div>
+            <div class="patronage-desc ar-only">وزير التعليم العالى والبحث العلمى</div>
+          </div>
+
+          <div class="patronage-person">
+            <div class="patronage-role en-only">Under Patronage of</div>
+            <div class="patronage-role ar-only">تحت رعاية</div>
+            <div class="patronage-name en-only">Prof. Dr. Mamdouh Moawd</div>
+            <div class="patronage-name ar-only">أ.د/ ممدوح معوض</div>
+            <div class="patronage-desc en-only">President of NRC · Acting President, Academy of Scientific Research &amp; Technology</div>
+            <div class="patronage-desc ar-only">رئيس المركز القومى للبحوث</div>
+          </div>
+
+          <div class="patronage-person">
+            <div class="patronage-role en-only">Conference Chairman</div>
+            <div class="patronage-role ar-only">رئيس المؤتمر</div>
+            <div class="patronage-name en-only">Prof. Dr. Khaled Abd El-Hameed</div>
+            <div class="patronage-name ar-only">أ.د/ خالد عبد الحميد</div>
+            <div class="patronage-desc en-only">Dean of Veterinary Research Institute, NRC</div>
+            <div class="patronage-desc ar-only">عميد معهد البحوث البيطرية</div>
+          </div>
+
+          <div class="patronage-person">
+            <div class="patronage-role en-only">Conference Vice-Chairman</div>
+            <div class="patronage-role ar-only">نائب رئيس المؤتمر</div>
+            <div class="patronage-name en-only">Prof. Dr. Khaled El-Bayoumi</div>
+            <div class="patronage-name ar-only">أ.د/ خالد البيومى</div>
+            <div class="patronage-desc en-only">Vice Dean of Veterinary Research Institute, NRC</div>
+            <div class="patronage-desc ar-only">وكيل معهد البحوث البيطرية</div>
+          </div>
+
+          <div class="patronage-person">
+            <div class="patronage-role en-only">General Secretary</div>
+            <div class="patronage-role ar-only">السكرتير العام</div>
+            <div class="patronage-name en-only">Prof. Ahmed El Shemy</div>
+            <div class="patronage-name ar-only">أ.د/ أحمد الشيمى</div>
+            <div class="patronage-desc en-only">Veterinary Research Institute, NRC</div>
+          </div>
+
+          <div class="patronage-person">
+            <div class="patronage-role en-only">Head of Organizing Committee</div>
+            <div class="patronage-role ar-only">رئيس لجنة التنظيم</div>
+            <div class="patronage-name en-only">Prof. Sobhy Abdel-Shafy</div>
+            <div class="patronage-name ar-only">أ.د/ صبحي عبد الشافي</div>
+            <div class="patronage-desc en-only">Veterinary Research Institute, NRC</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TOPICS
+     ============================================================ -->
+<section id="topics">
+  <div class="section-inner">
+    <div class="section-label en-only">Scientific Programme</div>
+    <div class="section-label ar-only">البرنامج العلمي</div>
+    <h2 class="section-title en-only">Conference <em>Topics</em></h2>
+    <h2 class="section-title ar-only"><em>محاور</em> المؤتمر</h2>
+    <div class="section-divider"></div>
+
+    <div class="topics-grid fade-in">
+      <div class="topic-card">
+        <span class="topic-num">01</span>
+        <span class="topic-text en-only">Modern Technologies in Tracking, Diagnosing, and Controlling Animal Diseases</span>
+        <span class="topic-text ar-only">التقنيات الحديثة فى تتبع وبائية وتشخيص ومكافحة أمراض الحيوان</span>
+      </div>
+      <div class="topic-card">
+        <span class="topic-num">02</span>
+        <span class="topic-text en-only">Microbial Resistance to Antibiotics in Livestock and Poultry Farms</span>
+        <span class="topic-text ar-only">مقاومة الميكروبات للمضادات الحيوية في مزارع الإنتاج الحيوانى والداجنى</span>
+      </div>
+      <div class="topic-card">
+        <span class="topic-num">03</span>
+        <span class="topic-text en-only">Biotechnology Applications for Enhancing Veterinary Vaccines and Their Efficiency</span>
+        <span class="topic-text ar-only">تطبيقات التكنولوجيا الحيوية فى اللقاحات البيطرية وتحسين كفاءتها</span>
+      </div>
+      <div class="topic-card">
+        <span class="topic-num">04</span>
+        <span class="topic-text en-only">Recent Trends in Animal Reproduction and Artificial Insemination</span>
+        <span class="topic-text ar-only">الاتجاهات الحديثة فى التكاثر الحيوانى والتلقيح الصناعى</span>
+      </div>
+      <div class="topic-card">
+        <span class="topic-num">05</span>
+        <span class="topic-text en-only">Fish Farming and Aquatic Animal Health</span>
+        <span class="topic-text ar-only">الاستزراع السمكي وصحة الأحياء المائية</span>
+      </div>
+      <div class="topic-card">
+        <span class="topic-num">06</span>
+        <span class="topic-text en-only">Poultry Health and Emerging Infectious Diseases</span>
+        <span class="topic-text ar-only">صحة الدواجن والأمراض المعدية الناشئة</span>
+      </div>
+      <div class="topic-card">
+        <span class="topic-num">07</span>
+        <span class="topic-text en-only">Zoonotic Diseases and the One Health Approach</span>
+        <span class="topic-text ar-only">الأمراض المشتركة والصحة الواحدة</span>
+      </div>
+      <div class="topic-card">
+        <span class="topic-num">08</span>
+        <span class="topic-text en-only">Safety and Quality of Meat, Milk, and Their Products</span>
+        <span class="topic-text ar-only">سلامة وجودة اللحوم والألبان ومنتجاتهما</span>
+      </div>
+      <div class="topic-card">
+        <span class="topic-num">09</span>
+        <span class="topic-text en-only">The Role of Artificial Intelligence in Veterinary Medicine</span>
+        <span class="topic-text ar-only">دور الذكاء الاصطناعي فى مجال الطب البيطرى</span>
+      </div>
+      <div class="topic-card">
+        <span class="topic-num">10</span>
+        <span class="topic-text en-only">Nutritional Strategies to Improve Farm Productivity Efficiency</span>
+        <span class="topic-text ar-only">استراتيجيات التغذية لتحسين الكفاءة الإنتاجية فى المزارع</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEES
+     ============================================================ -->
+<section id="fees">
+  <div class="section-inner">
+    <div class="section-label en-only">Participation</div>
+    <div class="section-label ar-only">المشاركة</div>
+    <h2 class="section-title en-only">Conference <em>Fees</em></h2>
+    <h2 class="section-title ar-only">رسوم <em>الاشتراك</em></h2>
+    <div class="section-divider"></div>
+
+    <div class="fees-grid fade-in">
+      <div class="fees-group">
+        <div class="fees-group-title en-only">Egyptian Participants</div>
+        <div class="fees-group-title ar-only">المشاركون المصريون</div>
+        <div class="fee-row">
+          <div class="fee-desc en-only">Double Room</div>
+          <div class="fee-desc ar-only">غرفة مزدوجة</div>
+          <div class="fee-amount">8,000 <span class="fee-currency">EGP</span></div>
+        </div>
+        <div class="fee-row">
+          <div class="fee-desc en-only">Single Room</div>
+          <div class="fee-desc ar-only">غرفة فردى</div>
+          <div class="fee-amount">15,300 <span class="fee-currency">EGP</span></div>
+        </div>
+      </div>
+      <div class="fees-group">
+        <div class="fees-group-title en-only">International Participants</div>
+        <div class="fees-group-title ar-only">المشاركون الأجانب</div>
+        <div class="fee-row">
+          <div class="fee-desc en-only">Double Room</div>
+          <div class="fee-desc ar-only">غرفة مزدوجة</div>
+          <div class="fee-amount">250 <span class="fee-currency">USD</span></div>
+        </div>
+        <div class="fee-row">
+          <div class="fee-desc en-only">Single Room</div>
+          <div class="fee-desc ar-only">غرفة فردى</div>
+          <div class="fee-amount">400 <span class="fee-currency">USD</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fees-note fade-in">
+      <strong class="en-only">Fees include:</strong>
+      <strong class="ar-only">الاشتراك يشمل:</strong>
+      <span class="en-only"> Conference opening ceremony, all scientific sessions, and full board accommodation for 4 days / 3 nights. Fees are preliminary and subject to change.</span>
+      <span class="ar-only"> حفل افتتاح المؤتمر والجلسات العلمية وإقامة كاملة لمدة أربعة أيام - ثلاث ليالى. الرسوم ليست نهائية وقابلة للتعديل.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PUBLICATION & PRIZE
+     ============================================================ -->
+<section id="publication">
+  <div class="section-inner">
+    <div class="section-label en-only">Research Publication</div>
+    <div class="section-label ar-only">النشر العلمي</div>
+    <h2 class="section-title en-only">Publication &amp; <em>Prize</em></h2>
+    <h2 class="section-title ar-only">النشر و<em>الجوائز</em></h2>
+    <div class="section-divider"></div>
+
+    <div class="pub-box fade-in">
+      <h3 class="en-only">Egyptian Journal of Veterinary Sciences</h3>
+      <h3 class="ar-only">المجلة المصرية للعلوم البيطرية</h3>
+      <p class="en-only">Accepted full manuscripts will be published in the Egyptian Journal of Veterinary Sciences (EJVS), following the official publication guidelines.</p>
+      <p class="ar-only">الأبحاث الكاملة المقبولة ستنشر في المجلة المصرية للعلوم البيطرية وفقاً للإرشادات الرسمية للنشر.</p>
+      <a href="https://ejvs.journals.ekb.eg" target="_blank" rel="noopener">ejvs.journals.ekb.eg</a>
+      <br/><span class="scopus-badge">Scopus Indexed</span>
+    </div>
+
+    <div class="prize-banner fade-in">
+      <h3 class="en-only">🏆 Best Applied Research Prizes</h3>
+      <h3 class="ar-only">🏆 جوائز أفضل بحث تطبيقي</h3>
+      <p class="en-only">A prestigious award of <strong>five prizes</strong> will be presented to the best research papers with high practical and industrial applicability in the field of Veterinary Science.</p>
+      <p class="ar-only"><strong>خمس جوائز</strong> مرموقة ستُمنح لأفضل الأبحاث العلمية ذات التطبيق العملي والصناعي في مجال العلوم البيطرية.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     VENUES & LOCATION
+     ============================================================ -->
+<section id="venues">
+  <div class="section-inner">
+    <div class="section-label en-only">Getting There</div>
+    <div class="section-label ar-only">كيفية الوصول</div>
+    <h2 class="section-title en-only">Conference <em>Venues</em></h2>
+    <h2 class="section-title ar-only"><em>أماكن</em> انعقاد المؤتمر</h2>
+    <div class="section-divider"></div>
+
+    <div class="venues-grid fade-in">
+
+      <!-- Venue 1 -->
+      <div class="venue-card">
+        <div class="venue-card-header">
+          <div class="venue-card-day en-only">Day 1 — 27 September 2026</div>
+          <div class="venue-card-day ar-only">اليوم الأول — ٢٧ سبتمبر ٢٠٢٦</div>
+          <h3 class="venue-card-name en-only">Al Manara International Conference Center</h3>
+          <h3 class="venue-card-name ar-only">مركز المنارة للمؤتمرات الدولية</h3>
+          <p class="venue-card-addr en-only">Axis of Field Marshal Tantawy, New Cairo, Egypt</p>
+          <p class="venue-card-addr ar-only">محور المشير طنطاوي، القاهرة الجديدة، مصر</p>
+        </div>
+        <div class="venue-map-wrap">
+          <iframe
+            title="Al Manara International Conference Center"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.1!2d31.4!3d30.01!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583d37e7a89c0b%3A0x1c2d3a7b8e9f0a1b!2sAl%20Manara%20International%20Conference%20Center!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <a class="venue-directions en-only"
+           href="https://maps.google.com/?q=Al+Manara+International+Conference+Center+New+Cairo+Egypt"
+           target="_blank" rel="noopener">
+          ↗ Open in Google Maps
+        </a>
+        <a class="venue-directions ar-only"
+           href="https://maps.google.com/?q=Al+Manara+International+Conference+Center+New+Cairo+Egypt"
+           target="_blank" rel="noopener">
+          ↗ فتح في خرائط جوجل
+        </a>
+      </div>
+
+      <!-- Venue 2 -->
+      <div class="venue-card">
+        <div class="venue-card-header">
+          <div class="venue-card-day en-only">Days 2–4 — 28–30 September 2026</div>
+          <div class="venue-card-day ar-only">الأيام ٢–٤ — ٢٨–٣٠ سبتمبر ٢٠٢٦</div>
+          <h3 class="venue-card-name en-only">Rixos Al Montaza Alexandria</h3>
+          <h3 class="venue-card-name ar-only">ريكسوس المنتزه الإسكندرية</h3>
+          <p class="venue-card-addr en-only">Al Montaza Palace District, Alexandria, Egypt</p>
+          <p class="venue-card-addr ar-only">منطقة قصر المنتزه، الإسكندرية، مصر</p>
+        </div>
+        <div class="venue-map-wrap">
+          <iframe
+            title="Rixos Al Montaza Alexandria"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.5!2d30.0235!3d31.2825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4b2a3f6e5d9%3A0x8b7c6d5e4f3a2b1c!2sRixos%20Al%20Montaza%20Alexandria!5e0!3m2!1sen!2seg!4v1700000000001!5m2!1sen!2seg"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <a class="venue-directions en-only"
+           href="https://maps.google.com/?q=Rixos+Al+Montaza+Alexandria+Egypt"
+           target="_blank" rel="noopener">
+          ↗ Open in Google Maps
+        </a>
+        <a class="venue-directions ar-only"
+           href="https://maps.google.com/?q=Rixos+Al+Montaza+Alexandria+Egypt"
+           target="_blank" rel="noopener">
+          ↗ فتح في خرائط جوجل
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     REGISTER
+     ============================================================ -->
+<section id="register">
+  <div class="section-inner">
+    <div class="register-layout fade-in">
+
+      <!-- Info column -->
+      <div class="register-info">
+        <div class="section-label en-only">Join Us</div>
+        <div class="section-label ar-only">انضم إلينا</div>
+        <h2 class="section-title en-only">Register for <em>ICOVRI 10</em></h2>
+        <h2 class="section-title ar-only">سجل في <em>المؤتمر العاشر</em></h2>
+        <div class="section-divider"></div>
+        <p class="en-only">Secure your place at Egypt's premier veterinary science conference. Registration is open for Egyptian and international participants.</p>
+        <p class="ar-only">احجز مكانك في أبرز مؤتمر للعلوم البيطرية في مصر.</p>
+
+        <div class="register-contact">
+          <div class="contact-item">
+            <div class="contact-icon">✉</div>
+            <a href="mailto:icovriconference@gmail.com">icovriconference@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon whatsapp">📱</div>
+            <div>
+              <div class="contact-label en-only">Registration</div>
+              <div class="contact-label ar-only">التسجيل</div>
+              <a href="https://wa.me/201066474245" target="_blank" rel="noopener">+20 10 66474245</a>
+              <div class="contact-sub en-only">Prof. Seham Hendawy</div>
+              <div class="contact-sub ar-only">أ.د/ سهام هنداوي</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon whatsapp">📱</div>
+            <div>
+              <div class="contact-label en-only">Inquiries &amp; Information</div>
+              <div class="contact-label ar-only">الاستفسارات</div>
+              <a href="https://wa.me/201003489362" target="_blank" rel="noopener">+20 10 03489362</a>
+              <div class="contact-sub en-only">Prof. Eman El Shanawany</div>
+              <div class="contact-sub ar-only">أ.د/ إيمان الشناوي</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📄</div>
+            <div>
+              <div class="contact-label en-only">Abstract &amp; Paper Submission</div>
+              <div class="contact-label ar-only">تقديم الملخصات والأبحاث</div>
+              <a href="https://wa.me/201015154261" target="_blank" rel="noopener">+20 10 15154261</a>
+              <div class="contact-sub en-only">Dr. Ahmed Sosa</div>
+              <div class="contact-sub ar-only">د. أحمد صوصة</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label en-only">Day 1 — Sep 27</div>
+              <div class="contact-label ar-only">اليوم الأول — ٢٧ سبتمبر</div>
+              <span class="en-only">Al Manara Int'l Conference Center, New Cairo</span>
+              <span class="ar-only">مركز المنارة للمؤتمرات، القاهرة الجديدة</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label en-only">Days 2–4 — Sep 28–30</div>
+              <div class="contact-label ar-only">الأيام ٢–٤ — ٢٨–٣٠ سبتمبر</div>
+              <span class="en-only">Rixos Al Montaza, Alexandria</span>
+              <span class="ar-only">ريكسوس المنتزه، الإسكندرية</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon facebook">f</div>
+            <div>
+              <div class="contact-label en-only">Follow Us</div>
+              <div class="contact-label ar-only">تابعنا</div>
+              <a href="https://www.facebook.com/share/19C4FUxLce/" target="_blank" rel="noopener" class="en-only">ICOVRI on Facebook</a>
+              <a href="https://www.facebook.com/share/19C4FUxLce/" target="_blank" rel="noopener" class="ar-only">ICOVRI على فيسبوك</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form column -->
+      <div class="register-form">
+        <div class="form-title en-only">Registration Form</div>
+        <div class="form-title ar-only">نموذج التسجيل</div>
+
+        <div id="regForm">
+          <div class="form-2col">
+            <div class="form-row">
+              <label class="en-only">First Name *</label>
+              <label class="ar-only">الاسم الأول *</label>
+              <input type="text" id="fname" placeholder="First name" autocomplete="given-name"/>
+            </div>
+            <div class="form-row">
+              <label class="en-only">Last Name *</label>
+              <label class="ar-only">اسم العائلة *</label>
+              <input type="text" id="lname" placeholder="Last name" autocomplete="family-name"/>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="en-only">Email Address *</label>
+            <label class="ar-only">البريد الإلكتروني *</label>
+            <input type="email" id="email" placeholder="your@email.com" autocomplete="email"/>
+          </div>
+
+          <div class="form-row">
+            <label class="en-only">Phone Number</label>
+            <label class="ar-only">رقم الهاتف</label>
+            <input type="tel" id="phone" placeholder="+20 ..." autocomplete="tel"/>
+          </div>
+
+          <div class="form-row">
+            <label class="en-only">Institution / Affiliation *</label>
+            <label class="ar-only">المؤسسة / الانتماء *</label>
+            <input type="text" id="affil" placeholder="University, Institute, etc." autocomplete="organization"/>
+          </div>
+
+          <div class="form-row">
+            <label class="en-only">Country *</label>
+            <label class="ar-only">الدولة *</label>
+            <input type="text" id="country" placeholder="Country" autocomplete="country-name"/>
+          </div>
+
+          <div class="form-2col">
+            <div class="form-row">
+              <label class="en-only">Participant Type *</label>
+              <label class="ar-only">نوع المشارك *</label>
+              <select id="ptype">
+                <option value="">Select…</option>
+                <option value="Egyptian">Egyptian</option>
+                <option value="International">International</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label class="en-only">Room Type *</label>
+              <label class="ar-only">نوع الغرفة *</label>
+              <select id="rtype">
+                <option value="">Select…</option>
+                <option value="Double Room">Double Room</option>
+                <option value="Single Room">Single Room</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="en-only">Presenting a Paper?</label>
+            <label class="ar-only">هل ستقدم بحثاً؟</label>
+            <select id="paper">
+              <option value="No">No</option>
+              <option value="Yes – Oral Presentation">Yes – Oral Presentation</option>
+              <option value="Yes – Poster">Yes – Poster</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label class="en-only">Special Requirements</label>
+            <label class="ar-only">متطلبات خاصة</label>
+            <textarea id="notes" rows="2" placeholder="Dietary, accessibility, etc."></textarea>
+          </div>
+
+          <button class="submit-btn" type="button" id="submitBtn">
+            <span class="en-only">Complete Registration</span>
+            <span class="ar-only">إتمام التسجيل</span>
+          </button>
+        </div>
+
+        <!-- Success state -->
+        <div class="form-success" id="formSuccess">
+          <div class="form-success-icon">✅</div>
+          <h3 class="en-only">Registration Received!</h3>
+          <h3 class="ar-only">تم استلام تسجيلك!</h3>
+          <p class="en-only">Thank you for registering for ICOVRI 10. Your information has been recorded.</p>
+          <p class="ar-only">شكراً لتسجيلك في المؤتمر العاشر. تم تسجيل بياناتك.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>ICOVRI 10</h3>
+        <p class="en-only">The Tenth International Conference of the Veterinary Research Institute<br>September 27–30, 2026 · Ain El-Sokhna, Egypt</p>
+        <p class="ar-only">المؤتمر الدولى العاشر لمعهد البحوث البيطرية<br>٢٧–٣٠ سبتمبر ٢٠٢٦ · عين السخنة، مصر</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="en-only">Quick Links</h4>
+        <h4 class="ar-only">روابط سريعة</h4>
+        <ul>
+          <li><a href="#about"       class="en-only">About the Conference</a> <a href="#about"       class="ar-only">عن المؤتمر</a></li>
+          <li><a href="#topics"      class="en-only">Scientific Topics</a>    <a href="#topics"      class="ar-only">المحاور العلمية</a></li>
+          <li><a href="#fees"        class="en-only">Registration Fees</a>    <a href="#fees"        class="ar-only">رسوم الاشتراك</a></li>
+          <li><a href="#publication" class="en-only">Publication</a>          <a href="#publication" class="ar-only">النشر العلمي</a></li>
+          <li><a href="#venues"      class="en-only">Venues</a>               <a href="#venues"      class="ar-only">أماكن المؤتمر</a></li>
+          <li><a href="#register"    class="en-only">Register</a>             <a href="#register"    class="ar-only">التسجيل</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="en-only">Contact</h4>
+        <h4 class="ar-only">تواصل معنا</h4>
+        <ul>
+          <li><a href="mailto:icovriconference@gmail.com">icovriconference@gmail.com</a></li>
+          <li><a href="https://wa.me/201066474245" target="_blank" rel="noopener" class="en-only">+20 10 66474245 (Registration)</a>  <a href="https://wa.me/201066474245" target="_blank" rel="noopener" class="ar-only">+20 10 66474245 (تسجيل)</a></li>
+          <li><a href="https://wa.me/201003489362" target="_blank" rel="noopener" class="en-only">+20 10 03489362 (Inquiries)</a>     <a href="https://wa.me/201003489362" target="_blank" rel="noopener" class="ar-only">+20 10 03489362 (استفسارات)</a></li>
+          <li><a href="https://wa.me/201015154261" target="_blank" rel="noopener" class="en-only">+20 10 15154261 (Abstracts)</a>     <a href="https://wa.me/201015154261" target="_blank" rel="noopener" class="ar-only">+20 10 15154261 (ملخصات)</a></li>
+          <li><a href="https://ejvs.journals.ekb.eg" target="_blank" rel="noopener">EJVS Journal (Scopus)</a></li>
+          <li><a href="https://www.facebook.com/share/19C4FUxLce/" target="_blank" rel="noopener" class="en-only">📘 Facebook Page</a><a href="https://www.facebook.com/share/19C4FUxLce/" target="_blank" rel="noopener" class="ar-only">📘 صفحة فيسبوك</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="en-only">© 2026 Veterinary Research Institute · National Research Centre · Egypt</p>
+      <p class="ar-only">© ٢٠٢٦ معهد البحوث البيطرية · المركز القومى للبحوث · مصر</p>
+      <p class="en-only" style="color:rgba(255,255,255,0.2);">The 10th I-COVRI, September 27–30, 2026, Ain El-Sokhna, Egypt</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast notification -->
+<div id="toast" role="alert" aria-live="assertive"></div>
+
+<!-- Scripts — plain JS, works from file:// and any server -->
+<script src="js/navigation.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/language.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/form.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

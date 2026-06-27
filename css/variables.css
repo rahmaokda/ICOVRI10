@@ -1,0 +1,35 @@
+/* ===========================
+   ICOVRI 10 — Design Tokens
+   =========================== */
+
+:root {
+  /* Brand colours */
+  --navy:        #1ab8d4;
+  --deep-blue:   #1ab8d4;
+  --gold:        #c9a227;
+  --gold-light:  #e8c96a;
+  --gold-pale:   #f5e6b0;
+
+  /* Neutrals */
+  --white:       #ffffff;
+  --off-white:   #f0fbfd;
+  --light-gray:  #cceef5;
+
+  /* Text — solid, readable on light backgrounds */
+  --text-dark:   #083b45;
+  --text-mid:    #2a6070;
+  --text-body:   #083b45;
+  --text-muted:  #3a6e7e;   /* replaces all .4–.55 opacity variants */
+  --text-sub:    #5a8a96;   /* replaces all .55–.65 opacity variants */
+
+  /* Accents */
+  --accent-teal: #1ab8d4;
+  --teal-bright: #1ab8d4;
+  --teal:        #1ab8d4;
+
+  /* Surfaces */
+  --bg-page:     #eefcff;
+  --bg-card:     #ffffff;
+  --border:      #b8e8f0;
+  --border-soft: #d4f1f7;
+}

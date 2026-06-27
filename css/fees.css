@@ -1,0 +1,70 @@
+/* ===========================
+   ICOVRI 10 — Fees Section
+   =========================== */
+
+#fees {
+  background: linear-gradient(180deg, #dff9fc 0%, var(--navy) 100%);
+}
+
+.fees-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.fees-group {
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 40px;
+}
+
+.fees-group-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #c9a227;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(201, 162, 39, .3);
+}
+
+.fee-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.fee-row:last-child { border-bottom: none; }
+
+.fee-desc {
+  font-size: 14px;
+  color: #083b45;
+}
+
+.fee-amount {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #c9a227;
+}
+
+.fee-currency {
+  font-size: 14px;
+  color: #3a6e7e;
+}
+
+.fees-note {
+  margin-top: 32px;
+  padding: 20px;
+  background: rgba(26, 184, 212, .08);
+  border-left: 3px solid var(--teal-bright);
+  color: #083b45;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+body.ar .fees-note {
+  border-left: none;
+  border-right: 3px solid var(--teal-bright);
+}

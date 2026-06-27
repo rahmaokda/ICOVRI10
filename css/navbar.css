@@ -1,0 +1,156 @@
+/* ===========================
+   ICOVRI 10 — Navigation
+   =========================== */
+
+/* ---- Language bar ---- */
+#lang-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 24px;
+  background: rgba(255, 255, 255, .95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(201, 162, 39, .2);
+}
+
+body.ar #lang-bar { justify-content: flex-start; }
+
+.lang-btn {
+  background: none;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 4px 16px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+/* ---- Main nav ---- */
+nav {
+  position: fixed;
+  top: 36px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 0 32px;
+  background: rgba(255, 255, 255, .95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(201, 162, 39, .15);
+}
+
+.nav-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  height: 38px;
+  width: 38px;
+  object-fit: contain;
+}
+
+.nav-logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #083b45;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  transition: color 0.2s;
+  font-weight: 600;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+.nav-register {
+  background: var(--gold) !important;
+  color: var(--navy) !important;
+  padding: 8px 20px !important;
+  font-weight: 700 !important;
+}
+
+.nav-register:hover {
+  background: var(--gold-light) !important;
+  color: var(--navy) !important;
+}
+
+/* ---- Hamburger ---- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--gold);
+}
+
+/* ---- Mobile menu ---- */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 96px;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, .98);
+  z-index: 998;
+  padding: 20px 32px;
+  flex-direction: column;
+  gap: 4px;
+  border-bottom: 1px solid rgba(201, 162, 39, .2);
+}
+
+.mobile-menu.open { display: flex; }
+
+.mobile-menu a {
+  color: #083b45;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(8, 59, 69, .08);
+  font-weight: 600;
+}
+
+.mobile-menu a:hover { color: var(--gold); }

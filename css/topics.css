@@ -1,0 +1,61 @@
+/* ===========================
+   ICOVRI 10 — Topics Section
+   =========================== */
+
+#topics {
+  background: #dff9fc;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.topic-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 28px;
+  display: flex;
+  gap: 16px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.topic-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--teal-bright), var(--gold));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.topic-card:hover::before { transform: scaleX(1); }
+
+.topic-card:hover {
+  background: rgba(26, 184, 212, .08);
+  border-color: rgba(26, 184, 212, .35);
+}
+
+.topic-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #b8e8f0;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 32px;
+}
+
+.topic-text {
+  font-size: 14px;
+  color: rgba(8, 59, 69, .88);
+  line-height: 1.6;
+  font-weight: 400;
+}

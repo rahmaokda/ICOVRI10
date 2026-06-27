@@ -1,0 +1,125 @@
+/* ===========================
+   ICOVRI 10 — About Section
+   =========================== */
+
+#about {
+  background: linear-gradient(180deg, var(--navy) 0%, #dff9fc 100%);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+body.ar .about-grid { direction: rtl; }
+
+/* ---- Text column ---- */
+.about-text p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #083b45;
+  margin-bottom: 20px;
+}
+
+.about-text .chairman-sig {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(201, 162, 39, .3);
+}
+
+.chairman-sig strong {
+  color: #c9a227;
+  font-size: 15px;
+}
+
+.chairman-sig span {
+  display: block;
+  color: #3a6e7e;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* ---- Stats grid ---- */
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 28px;
+  transition: border-color 0.3s;
+}
+
+.stat-card:hover { border-color: var(--teal-bright); }
+
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #c9a227;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3a6e7e;
+  margin-top: 8px;
+}
+
+/* ---- Patronage card ---- */
+.patronage-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 28px;
+}
+
+.patronage-title {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--teal-bright);
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.patronage-person {
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.patronage-person:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.patronage-role {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c9a227;
+  margin-bottom: 3px;
+  font-weight: 700;
+}
+
+.patronage-name {
+  font-size: 15px;
+  color: #083b45;
+  font-weight: 600;
+}
+
+.patronage-desc {
+  font-size: 12px;
+  color: #3a6e7e;
+  margin-top: 2px;
+  line-height: 1.5;
+}

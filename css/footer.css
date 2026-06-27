@@ -1,0 +1,73 @@
+/* ===========================
+   ICOVRI 10 — Footer
+   =========================== */
+
+footer {
+  background: #00b4cc;
+  border-top: 1px solid var(--border);
+  padding: 60px 24px 32px;
+}
+
+.footer-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 48px;
+}
+
+.footer-brand h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #c9a227;
+  margin-bottom: 12px;
+}
+
+.footer-brand p {
+  font-size: 13px;
+  color: #083b45;
+  line-height: 1.8;
+}
+
+.footer-col h4 {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #083b45;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.footer-col ul { list-style: none; }
+
+.footer-col ul li { margin-bottom: 10px; }
+
+.footer-col ul li a {
+  color: #083b45;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.footer-col ul li a:hover { color: #c9a227; }
+
+.footer-bottom {
+  border-top: 1px solid rgba(8, 59, 69, .15);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #083b45;
+  letter-spacing: 1px;
+}

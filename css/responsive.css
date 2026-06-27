@@ -1,0 +1,26 @@
+/* ===========================
+   ICOVRI 10 — Responsive
+   =========================== */
+
+@media (max-width: 900px) {
+  .nav-links   { display: none; }
+  .hamburger   { display: flex; }
+
+  .about-grid,
+  .fees-grid,
+  .register-layout,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-number { font-size: 60px; }
+  .pub-box     { padding: 32px; }
+  .register-form { padding: 24px; }
+}
+
+@media (max-width: 600px) {
+  .countdown-units { gap: 16px; }
+  .countdown-num   { font-size: 28px; }
+  .hero-meta       { gap: 20px; }
+  .form-2col       { grid-template-columns: 1fr; }
+}
