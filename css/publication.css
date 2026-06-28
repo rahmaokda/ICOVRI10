@@ -133,3 +133,180 @@
     padding: 28px 20px;
   }
 }
+
+/* ===========================
+   Prize Section
+   =========================== */
+
+.prize-section {
+  margin-top: 28px;
+}
+
+/* ---- Banner ---- */
+.prize-banner {
+  background: linear-gradient(135deg, #7a5800, #c9a227, #e8c96a);
+  padding: 40px 48px;
+}
+
+.prize-banner-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.prize-banner-text { flex: 1; min-width: 260px; }
+
+.prize-eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(8, 59, 69, .7);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.prize-banner h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #083b45;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.prize-banner p {
+  color: #083b45;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ---- Dates column ---- */
+.prize-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 240px;
+}
+
+.prize-date-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(8, 59, 69, .1);
+  padding: 14px 18px;
+}
+
+.prize-date-icon { font-size: 20px; flex-shrink: 0; }
+
+.prize-date-label {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(8, 59, 69, .65);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.prize-date-value {
+  font-size: 14px;
+  color: #083b45;
+  font-weight: 700;
+}
+
+/* ---- Details grid ---- */
+.prize-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px solid var(--border);
+  border-top: none;
+}
+
+.prize-card {
+  background: #ffffff;
+  padding: 32px 28px;
+  border-right: 1px solid var(--border);
+}
+
+.prize-card:last-child { border-right: none; }
+
+.prize-card-icon {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.prize-card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #083b45;
+  margin-bottom: 16px;
+}
+
+.prize-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.prize-card ul li {
+  font-size: 14px;
+  color: #2a6070;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border-soft);
+  line-height: 1.5;
+  padding-left: 16px;
+  position: relative;
+}
+
+.prize-card ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--teal-bright);
+  font-size: 12px;
+}
+
+.prize-card ul li:last-child { border-bottom: none; }
+
+body.ar .prize-card ul li {
+  padding-left: 0;
+  padding-right: 16px;
+}
+
+body.ar .prize-card ul li::before {
+  left: auto;
+  right: 0;
+  content: '←';
+}
+
+/* ---- CTA ---- */
+.prize-cta {
+  background: #f0fbfd;
+  border: 1px solid var(--border);
+  border-top: none;
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.prize-cta p {
+  font-size: 16px;
+  color: #083b45;
+  font-weight: 600;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .prize-banner-inner { flex-direction: column; }
+  .prize-dates { flex-direction: row; flex-wrap: wrap; }
+  .prize-details { grid-template-columns: 1fr; }
+  .prize-card { border-right: none; border-bottom: 1px solid var(--border); }
+  .prize-card:last-child { border-bottom: none; }
+  .prize-cta { flex-direction: column; text-align: center; }
+  .prize-banner { padding: 28px 24px; }
+}
