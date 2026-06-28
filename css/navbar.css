@@ -22,7 +22,7 @@ body.ar #lang-bar { justify-content: flex-start; }
 .lang-btn {
   background: none;
   border: 1px solid var(--gold);
-  color: var(--gold);
+  color: #083b45;
   padding: 4px 16px;
   cursor: pointer;
   font-family: inherit;
@@ -34,7 +34,7 @@ body.ar #lang-bar { justify-content: flex-start; }
 .lang-btn:hover,
 .lang-btn.active {
   background: var(--gold);
-  color: var(--navy);
+  color: #083b45;
 }
 
 /* ---- Main nav ---- */
