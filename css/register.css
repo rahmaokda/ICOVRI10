@@ -239,3 +239,31 @@ body.ar .form-upload-notice {
   color: #2a6070;
   line-height: 1.6;
 }
+
+/* ---- Google Form iframe ---- */
+.gform-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gform-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 1800px;
+  border: none;
+}
+
+.gform-fallback {
+  padding: 12px 0 0;
+  font-size: 13px;
+  color: #3a6e7e;
+  text-align: center;
+}
+
+.gform-fallback a {
+  color: #0a8fa8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.gform-fallback a:hover { color: var(--teal-bright); }
