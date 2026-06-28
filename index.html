@@ -743,93 +743,114 @@
         <div class="form-title ar-only">نموذج التسجيل</div>
 
         <div id="regForm">
-          <div class="form-2col">
-            <div class="form-row">
-              <label class="en-only">First Name *</label>
-              <label class="ar-only">الاسم الأول *</label>
-              <input type="text" id="fname" placeholder="First name" autocomplete="given-name"/>
-            </div>
-            <div class="form-row">
-              <label class="en-only">Last Name *</label>
-              <label class="ar-only">اسم العائلة *</label>
-              <input type="text" id="lname" placeholder="Last name" autocomplete="family-name"/>
-            </div>
+
+          <div class="form-row">
+            <label class="en-only">Full Name *</label>
+            <label class="ar-only">الاسم الكامل *</label>
+            <input type="text" id="fname" placeholder="Your full name" autocomplete="name"/>
           </div>
 
           <div class="form-row">
-            <label class="en-only">Email Address *</label>
-            <label class="ar-only">البريد الإلكتروني *</label>
-            <input type="email" id="email" placeholder="your@email.com" autocomplete="email"/>
-          </div>
-
-          <div class="form-row">
-            <label class="en-only">Phone Number</label>
-            <label class="ar-only">رقم الهاتف</label>
-            <input type="tel" id="phone" placeholder="+20 ..." autocomplete="tel"/>
-          </div>
-
-          <div class="form-row">
-            <label class="en-only">Institution / Affiliation *</label>
-            <label class="ar-only">المؤسسة / الانتماء *</label>
-            <input type="text" id="affil" placeholder="University, Institute, etc." autocomplete="organization"/>
-          </div>
-
-          <div class="form-row">
-            <label class="en-only">Country *</label>
-            <label class="ar-only">الدولة *</label>
-            <input type="text" id="country" placeholder="Country" autocomplete="country-name"/>
-          </div>
-
-          <div class="form-2col">
-            <div class="form-row">
-              <label class="en-only">Participant Type *</label>
-              <label class="ar-only">نوع المشارك *</label>
-              <select id="ptype">
-                <option value="">Select…</option>
-                <option value="Egyptian">Egyptian</option>
-                <option value="International">International</option>
-              </select>
-            </div>
-            <div class="form-row">
-              <label class="en-only">Room Type *</label>
-              <label class="ar-only">نوع الغرفة *</label>
-              <select id="rtype">
-                <option value="">Select…</option>
-                <option value="Double Room">Double Room</option>
-                <option value="Single Room">Single Room</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <label class="en-only">Presenting a Paper?</label>
-            <label class="ar-only">هل ستقدم بحثاً؟</label>
-            <select id="paper">
-              <option value="No">No</option>
-              <option value="Yes – Oral Presentation">Yes – Oral Presentation</option>
-              <option value="Yes – Poster">Yes – Poster</option>
+            <label class="en-only">Title / Academic Degree *</label>
+            <label class="ar-only">اللقب / الدرجة العلمية *</label>
+            <select id="title">
+              <option value="">Select…</option>
+              <option value="Professor">Professor</option>
+              <option value="Associate Professor">Associate Professor</option>
+              <option value="Researcher / Lecturer">Researcher / Lecturer</option>
+              <option value="Post-graduate Student">Post-graduate Student</option>
+              <option value="Undergraduate Student">Undergraduate Student</option>
+              <option value="Other">Other</option>
             </select>
           </div>
 
           <div class="form-row">
-            <label class="en-only">Special Requirements</label>
-            <label class="ar-only">متطلبات خاصة</label>
-            <textarea id="notes" rows="2" placeholder="Dietary, accessibility, etc."></textarea>
+            <label class="en-only">Affiliation / Institution *</label>
+            <label class="ar-only">المؤسسة / الانتماء *</label>
+            <input type="text" id="affil" placeholder="University, Institute, etc." autocomplete="organization"/>
+          </div>
+
+          <div class="form-2col">
+            <div class="form-row">
+              <label class="en-only">Email Address *</label>
+              <label class="ar-only">البريد الإلكتروني *</label>
+              <input type="email" id="email" placeholder="your@email.com" autocomplete="email"/>
+            </div>
+            <div class="form-row">
+              <label class="en-only">Phone / WhatsApp *</label>
+              <label class="ar-only">الهاتف / واتساب *</label>
+              <input type="tel" id="phone" placeholder="+20 ..." autocomplete="tel"/>
+            </div>
+          </div>
+
+          <div class="form-2col">
+            <div class="form-row">
+              <label class="en-only">Nationality *</label>
+              <label class="ar-only">الجنسية *</label>
+              <input type="text" id="nationality" placeholder="e.g. Egyptian" autocomplete="country-name"/>
+            </div>
+            <div class="form-row">
+              <label class="en-only">Participation Type *</label>
+              <label class="ar-only">نوع المشاركة *</label>
+              <select id="ptype">
+                <option value="">Select…</option>
+                <option value="Attendance First Day Only">Attendance First Day Only</option>
+                <option value="Attend for All Conference Days">Attend for All Conference Days</option>
+                <option value="Oral Presentation">Oral Presentation</option>
+                <option value="Poster Presentation">Poster Presentation</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="en-only">Are you submitting an Abstract / Manuscript? *</label>
+            <label class="ar-only">هل ستقدم ملخصاً أو ورقة بحثية؟ *</label>
+            <select id="abstract">
+              <option value="">Select…</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label class="en-only">Payment Status *</label>
+            <label class="ar-only">حالة الدفع *</label>
+            <select id="payment">
+              <option value="">Select…</option>
+              <option value="I have already paid the registration fees">I have already paid</option>
+              <option value="Not yet">Not yet</option>
+            </select>
+          </div>
+
+          <!-- File upload notice -->
+          <div class="form-upload-notice">
+            <div class="form-upload-icon">📎</div>
+            <div>
+              <div class="form-upload-title en-only">File Uploads Required</div>
+              <div class="form-upload-title ar-only">مطلوب رفع ملفات</div>
+              <div class="form-upload-desc en-only">After submitting, you will be redirected to complete your registration by uploading your <strong>abstract</strong> (if applicable) and <strong>payment receipt</strong>.</div>
+              <div class="form-upload-desc ar-only">بعد الإرسال، ستُحوَّل لإكمال التسجيل برفع <strong>ملخصك</strong> (إن وجد) و<strong>إيصال الدفع</strong>.</div>
+            </div>
           </div>
 
           <button class="submit-btn" type="button" id="submitBtn">
-            <span class="en-only">Complete Registration</span>
-            <span class="ar-only">إتمام التسجيل</span>
+            <span class="en-only">Continue to Complete Registration →</span>
+            <span class="ar-only">متابعة لإكمال التسجيل ←</span>
           </button>
         </div>
 
         <!-- Success state -->
         <div class="form-success" id="formSuccess">
           <div class="form-success-icon">✅</div>
-          <h3 class="en-only">Registration Received!</h3>
-          <h3 class="ar-only">تم استلام تسجيلك!</h3>
-          <p class="en-only">Thank you for registering for ICOVRI 10. Your information has been recorded.</p>
-          <p class="ar-only">شكراً لتسجيلك في المؤتمر العاشر. تم تسجيل بياناتك.</p>
+          <h3 class="en-only">Almost Done!</h3>
+          <h3 class="ar-only">اكتمل تقريباً!</h3>
+          <p class="en-only">Your details have been saved. Please complete your registration by uploading your files in the next step.</p>
+          <p class="ar-only">تم حفظ بياناتك. يرجى إكمال التسجيل برفع الملفات في الخطوة التالية.</p>
+          <a href="https://forms.gle/AJU26SQP2AsQNq1t8" target="_blank" rel="noopener" class="submit-btn" style="display:inline-block;margin-top:16px;text-align:center;text-decoration:none;">
+            <span class="en-only">Upload Files on Google Form →</span>
+            <span class="ar-only">رفع الملفات على نموذج جوجل ←</span>
+          </a>
         </div>
       </div>
 

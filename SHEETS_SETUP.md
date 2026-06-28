@@ -6,7 +6,7 @@
 2. Create a new spreadsheet, name it **ICOVRI 10 Registrations**
 3. In Row 1, add these headers exactly:
    ```
-   Timestamp | First Name | Last Name | Email | Phone | Affiliation | Country | Participant Type | Room Type | Presenting Paper | Notes
+   Timestamp | Name | Title/Academic Degree | Affiliation | Email | Phone | Nationality | Participation Type | Abstract Submission | Payment Status
    ```
 
 ## Step 2 — Add the Apps Script
@@ -24,7 +24,7 @@ function doPost(e) {
 
     sheet.appendRow([
       data.timestamp,
-      data.firstName,
+      data.name,
       data.lastName,
       data.email,
       data.phone,
