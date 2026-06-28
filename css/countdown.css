@@ -19,7 +19,7 @@
 }
 
 .countdown-label {
-  color: var(--navy);
+  color: #083b45;
   font-size: 12px;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -34,7 +34,7 @@
   font-family: 'Playfair Display', serif;
   font-size: 40px;
   font-weight: 700;
-  color: var(--navy);
+  color: #083b45;
   line-height: 1;
 }
 

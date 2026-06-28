@@ -67,7 +67,7 @@ section {
 /* ---- Buttons ---- */
 .btn-primary {
   background: var(--gold);
-  color: var(--navy);
+  color: #083b45;
   padding: 14px 40px;
   font-size: 14px;
   letter-spacing: 2px;

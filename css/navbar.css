@@ -100,14 +100,14 @@ nav {
 
 .nav-register {
   background: var(--gold) !important;
-  color: var(--navy) !important;
+  color: #083b45 !important;
   padding: 8px 20px !important;
   font-weight: 700 !important;
 }
 
 .nav-register:hover {
   background: var(--gold-light) !important;
-  color: var(--navy) !important;
+  color: #083b45 !important;
 }
 
 /* ---- Hamburger ---- */
