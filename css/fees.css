@@ -68,3 +68,12 @@ body.ar .fees-note {
   border-left: none;
   border-right: 3px solid var(--teal-bright);
 }
+
+.fee-tba {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px !important;
+  font-weight: 700;
+  color: var(--teal-bright);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
