@@ -77,3 +77,70 @@ body.ar .fees-note {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+/* ---- Fees contact CTA ---- */
+.fees-contact-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.fees-contact-box {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  padding: 56px 64px;
+  text-align: center;
+  max-width: 560px;
+  width: 100%;
+}
+
+.fees-contact-icon {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.fees-contact-box p {
+  font-size: 16px;
+  color: #2a6070;
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.fees-contact-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #083b45;
+  margin-bottom: 28px;
+}
+
+.fees-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25d366;
+  color: #ffffff;
+  padding: 16px 36px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+  margin-bottom: 16px;
+}
+
+.fees-contact-btn:hover {
+  background: #1da851;
+  transform: translateY(-2px);
+}
+
+.fees-wa-icon { font-size: 20px; }
+
+.fees-contact-num {
+  font-size: 15px;
+  color: #3a6e7e;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
