@@ -71,3 +71,16 @@ footer {
   color: #083b45;
   letter-spacing: 1px;
 }
+
+/* ---- Facebook link ---- */
+.footer-fb-link {
+  display: flex;
+  align-items: center;
+  color: #083b45;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.footer-fb-link:hover { color: #1877f2; }
