@@ -20,7 +20,7 @@
 
 .countdown-label {
   color: #083b45;
-  font-size: 15px;
+  font-size: 12px;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
@@ -39,7 +39,7 @@
 }
 
 .countdown-unit-label {
-  font-size: 14px;
+  font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: rgba(10, 22, 40, .6);

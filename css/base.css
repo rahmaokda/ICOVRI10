@@ -10,7 +10,6 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 18px;
 }
 
 body {
@@ -18,7 +17,6 @@ body {
   background: var(--bg-page);
   color: var(--text-body);
   overflow-x: hidden;
-  font-size: 1rem;
 }
 
 body.ar {

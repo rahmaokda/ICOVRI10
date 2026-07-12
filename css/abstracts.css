@@ -33,7 +33,7 @@
 .abstract-contact-card:hover { border-color: var(--teal-bright); }
 
 .abstract-contact-role {
-  font-size: 13px;
+  font-size: 10px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--teal-bright);
@@ -104,7 +104,7 @@ body.ar .abstract-note {
 .abstract-block-title {
   background: #083b45;
   color: #e8c96a;
-  font-size: 14px;
+  font-size: 11px;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
@@ -124,7 +124,7 @@ body.ar .abstract-note {
 .abstract-rule-tag {
   background: #f0fbfd;
   padding: 14px 16px;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
   color: #083b45;
   letter-spacing: 0.5px;
