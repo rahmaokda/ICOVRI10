@@ -176,22 +176,46 @@
 
 /* ---- Last 2 speakers centred row ---- */
 .speakers-last-row {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   margin-top: 24px;
+  justify-items: center;
 }
 
 .speakers-last-row .speaker-card {
-  width: calc(25% - 18px);
-  max-width: 320px;
+  width: 100%;
+  grid-column: span 1;
+}
+
+/* Centre the 2 cards by offsetting with empty columns */
+.speakers-last-row .speaker-card:first-child {
+  grid-column: 2;
+}
+.speakers-last-row .speaker-card:last-child {
+  grid-column: 3;
 }
 
 @media (max-width: 1100px) {
-  .speakers-last-row .speaker-card { width: calc(33.333% - 16px); }
+  .speakers-last-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .speakers-last-row .speaker-card:first-child { grid-column: 1; }
+  .speakers-last-row .speaker-card:last-child  { grid-column: 2; }
 }
 
 @media (max-width: 700px) {
-  .speakers-last-row { flex-wrap: wrap; }
-  .speakers-last-row .speaker-card { width: calc(50% - 8px); max-width: none; }
+  .speakers-last-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .speakers-last-row .speaker-card:first-child { grid-column: 1; }
+  .speakers-last-row .speaker-card:last-child  { grid-column: 2; }
+}
+
+@media (max-width: 420px) {
+  .speakers-last-row {
+    grid-template-columns: 1fr;
+  }
+  .speakers-last-row .speaker-card:first-child { grid-column: 1; }
+  .speakers-last-row .speaker-card:last-child  { grid-column: 1; }
 }
