@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="css/publication.css"/>
   <link rel="stylesheet" href="css/register.css"/>
   <link rel="stylesheet" href="css/venues.css"/>
+  <link rel="stylesheet" href="css/events.css"/>
   <link rel="stylesheet" href="css/footer.css"/>
   <link rel="stylesheet" href="css/animations.css"/>
   <link rel="stylesheet" href="css/responsive.css"/>
@@ -56,6 +57,7 @@
       <li><a href="#fees"        class="en-only">Fees</a>        <a href="#fees"        class="ar-only">الرسوم</a></li>
       <li><a href="#publication" class="en-only">Publication</a> <a href="#publication" class="ar-only">النشر</a></li>
       <li><a href="#venues"      class="en-only">Venues</a>      <a href="#venues"      class="ar-only">المواقع</a></li>
+      <li><a href="#events"      class="en-only">Events</a>      <a href="#events"      class="ar-only">الفعاليات</a></li>
       <li><a href="#abstracts"   class="en-only">Abstracts</a>   <a href="#abstracts"   class="ar-only">الملخصات</a></li>
       <li>
         <a href="#register" class="btn-primary nav-register en-only">Register</a>
@@ -77,6 +79,7 @@
   <a href="#fees"        class="en-only">Fees</a>        <a href="#fees"        class="ar-only">الرسوم</a>
   <a href="#publication" class="en-only">Publication</a> <a href="#publication" class="ar-only">النشر</a>
   <a href="#venues"      class="en-only">Venues</a>      <a href="#venues"      class="ar-only">المواقع</a>
+  <a href="#events"      class="en-only">Events</a>      <a href="#events"      class="ar-only">الفعاليات</a>
   <a href="#register"    class="en-only" style="color:#c9a227;font-weight:700;">Register Now</a>
   <a href="#register"    class="ar-only" style="color:#c9a227;font-weight:700;">سجل الآن</a>
   <a href="#abstracts"   class="en-only">Abstracts</a>   <a href="#abstracts"   class="ar-only">الملخصات</a>
@@ -924,6 +927,46 @@
 </section>
 
 <!-- ============================================================
+     EVENTS
+     ============================================================ -->
+<section id="events">
+  <div class="section-inner">
+    <div class="section-label en-only">Conference Programme</div>
+    <div class="section-label ar-only">برنامج المؤتمر</div>
+    <h2 class="section-title en-only">Conference <em>Events</em></h2>
+    <h2 class="section-title ar-only"><em>فعاليات</em> المؤتمر</h2>
+    <div class="section-divider"></div>
+
+    <div class="events-grid fade-in">
+
+      <div class="event-card">
+        <div class="event-day-badge en-only">Day 2</div>
+        <div class="event-day-badge ar-only">اليوم الثاني</div>
+        <div class="event-icon">🍽</div>
+        <div class="event-info">
+          <div class="event-title en-only">Gala Dinner</div>
+          <div class="event-title ar-only">حفل العشاء الرسمي</div>
+          <div class="event-venue en-only">Zafeer Restaurant</div>
+          <div class="event-venue ar-only">مطعم ظافر</div>
+          <div class="event-desc en-only">Join us for an elegant gala dinner at Zafeer Restaurant on the evening of Day 2, bringing together delegates, speakers, and guests for an unforgettable night.</div>
+          <div class="event-desc ar-only">انضموا إلينا في حفل عشاء رسمي أنيق في مطعم ظافر مساء اليوم الثاني، يجمع المشاركين والمتحدثين والضيوف في ليلة لا تُنسى.</div>
+          <div class="event-fb-video">
+            <div id="fb-root"></div>
+            <div class="fb-video"
+                 data-href="https://www.facebook.com/share/r/194tFSg5Gk/"
+                 data-width="500"
+                 data-show-text="false"
+                 data-autoplay="false">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
      REGISTER
      ============================================================ -->
 <section id="register">
@@ -1198,6 +1241,7 @@
           <li><a href="#fees"        class="en-only">Registration Fees</a>    <a href="#fees"        class="ar-only">رسوم الاشتراك</a></li>
           <li><a href="#publication" class="en-only">Publication &amp; Prize</a> <a href="#publication" class="ar-only">النشر والجوائز</a></li>
           <li><a href="#venues"      class="en-only">Venues</a>               <a href="#venues"      class="ar-only">أماكن المؤتمر</a></li>
+          <li><a href="#events"      class="en-only">Events</a>               <a href="#events"      class="ar-only">الفعاليات</a></li>
           <li><a href="#register"    class="en-only">Register</a>             <a href="#register"    class="ar-only">التسجيل</a></li>
           <li><a href="#abstracts"   class="en-only">Abstract Submission</a>  <a href="#abstracts"   class="ar-only">تقديم الملخصات</a></li>
         </ul>
@@ -1226,6 +1270,11 @@
 
 <!-- Toast notification -->
 <div id="toast" role="alert" aria-live="assertive"></div>
+
+<!-- Facebook SDK for embedded video -->
+<script async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0">
+</script>
 
 <!-- Scripts — plain JS, works from file:// and any server -->
 <script src="js/navigation.js"></script>

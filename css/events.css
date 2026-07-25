@@ -1,0 +1,121 @@
+/* ===========================
+   ICOVRI 10 — Events Section
+   =========================== */
+
+#events { background: #dff9fc; }
+
+.events-grid {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+/* ---- Event card ---- */
+.event-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  max-width: 560px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.event-card:hover {
+  box-shadow: 0 8px 32px rgba(26, 184, 212, .15);
+  border-color: var(--teal-bright);
+}
+
+/* ---- Day badge ---- */
+.event-day-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #c9a227;
+  color: #083b45;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 18px;
+}
+
+body.ar .event-day-badge {
+  left: auto;
+  right: 0;
+}
+
+/* ---- Icon ---- */
+.event-icon {
+  font-size: 52px;
+  text-align: center;
+  padding: 48px 0 16px;
+  line-height: 1;
+}
+
+/* ---- Info ---- */
+.event-info {
+  padding: 0 32px 32px;
+  text-align: center;
+}
+
+.event-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #083b45;
+  margin-bottom: 6px;
+}
+
+.event-venue {
+  font-size: 18px;
+  font-weight: 700;
+  color: #c9a227;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.event-desc {
+  font-size: 15px;
+  color: #2a6070;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+/* ---- Video button ---- */
+.event-video-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #1877f2;
+  color: #ffffff;
+  padding: 14px 32px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.event-video-btn:hover {
+  background: #0f5ec7;
+  transform: translateY(-2px);
+}
+
+/* ---- Facebook video embed ---- */
+.event-fb-video {
+  margin: 0 auto 8px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 500px;
+}
+
+.event-fb-video .fb-video,
+.event-fb-video .fb-video span,
+.event-fb-video .fb-video span iframe {
+  width: 100% !important;
+  max-width: 500px;
+}
