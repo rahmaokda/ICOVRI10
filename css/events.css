@@ -119,3 +119,19 @@ body.ar .event-day-badge {
   width: 100% !important;
   max-width: 500px;
 }
+
+/* ---- Native video player ---- */
+.event-video-wrap {
+  margin: 0 auto 8px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #000;
+}
+
+.event-video-wrap video {
+  width: 100%;
+  display: block;
+  max-height: 400px;
+}
