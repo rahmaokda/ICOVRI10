@@ -174,16 +174,25 @@
   justify-self: center;
 }
 
-/* ---- Last 3 speakers row ---- */
+/* ---- Last 3 speakers row — identical grid to main, centred ---- */
 .speakers-last-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 0.5fr repeat(3, 2fr) 0.5fr;
   gap: 24px;
   margin-top: 24px;
 }
 
-.speakers-last-row .speaker-card {
-  width: 100%;
+.speakers-last-row .speaker-card:nth-child(1) { grid-column: 2; }
+.speakers-last-row .speaker-card:nth-child(2) { grid-column: 3; }
+.speakers-last-row .speaker-card:nth-child(3) { grid-column: 4; }
+
+@media (max-width: 1100px) {
+  .speakers-last-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .speakers-last-row .speaker-card:nth-child(1) { grid-column: auto; }
+  .speakers-last-row .speaker-card:nth-child(2) { grid-column: auto; }
+  .speakers-last-row .speaker-card:nth-child(3) { grid-column: auto; }
 }
 
 @media (max-width: 700px) {
