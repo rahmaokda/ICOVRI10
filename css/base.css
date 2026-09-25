@@ -213,7 +213,7 @@ body.ar        .en-only { display: none !important; }
 }
 
 #announcement-bar p {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   color: #083b45;
   line-height: 1.6;
@@ -328,3 +328,21 @@ body.ar .programme-banner {
   .programme-banner { flex-direction: column; text-align: center; padding: 24px 20px; }
   body.ar .programme-banner { text-align: center; }
 }
+
+.announcement-download-btn {
+  display: inline-block;
+  margin-left: 12px;
+  background: #083b45;
+  color: #e8c96a;
+  padding: 4px 14px;
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.announcement-download-btn:hover { background: #052930; }
+
+body.ar .announcement-download-btn { margin-left: 0; margin-right: 12px; }
