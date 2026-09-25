@@ -262,3 +262,69 @@ body.ar .announcement-close {
     padding: 20px 20px 18px;
   }
 }
+
+/* ===========================
+   Programme Download Banner
+   =========================== */
+#programme { background: #dff9fc; padding: 60px 24px; }
+
+.programme-banner {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-left: 6px solid #c9a227;
+  padding: 36px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+body.ar .programme-banner {
+  border-left: 1px solid var(--border);
+  border-right: 6px solid #c9a227;
+  direction: rtl;
+}
+
+.programme-icon { font-size: 48px; flex-shrink: 0; }
+
+.programme-text { flex: 1; min-width: 200px; }
+
+.programme-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #083b45;
+  margin-bottom: 8px;
+}
+
+.programme-text p {
+  font-size: 15px;
+  color: #2a6070;
+  line-height: 1.7;
+}
+
+.programme-btn {
+  display: inline-block;
+  background: #c9a227;
+  color: #083b45;
+  padding: 14px 32px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.3s, transform 0.2s;
+  flex-shrink: 0;
+}
+
+.programme-btn:hover {
+  background: #e8c96a;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .programme-banner { flex-direction: column; text-align: center; padding: 24px 20px; }
+  body.ar .programme-banner { text-align: center; }
+}
