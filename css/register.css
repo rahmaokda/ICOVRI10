@@ -50,15 +50,6 @@
   flex-shrink: 0;
 }
 
-.contact-icon.facebook {
-  background: #1877f2;
-  border-color: #1877f2;
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 900;
-  font-family: 'Georgia', serif;
-}
-
 .contact-item a {
   color: #0a8fa8;
   text-decoration: none;
