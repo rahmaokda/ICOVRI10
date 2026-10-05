@@ -38,64 +38,75 @@
      ============================================================ -->
 <div id="announcement-bar">
   <div class="announcement-inner">
-    <span class="announcement-icon"></span>
     <p class="en-only">
       <strong>Conference Proceedings Available!</strong> Download the full ICOVRI 10 Proceedings.
-      <a href="assets/icovri10-proceedings.pdf" download class="announcement-download-btn en-only"> Download PDF</a>
+      <a href="assets/icovri10-proceedings.pdf" download class="announcement-download-btn en-only">Download PDF</a>
     </p>
     <p class="ar-only">
       <strong>الملفات المؤتمارية متاحة الآن!</strong> حمّل الملفات الكاملة لمؤتمر ICOVRI 10.
-      <a href="assets/icovri10-proceedings.pdf" download class="announcement-download-btn ar-only"> تحميل PDF</a>
+      <a href="assets/icovri10-proceedings.pdf" download class="announcement-download-btn ar-only">تحميل PDF</a>
     </p>
-    <button class="announcement-close" onclick="document.getElementById('announcement-bar').style.display='none'" aria-label="Close">✕</button>
+    <button type="button" class="announcement-close" aria-label="Close">✕</button>
   </div>
 </div>
 
 
-<nav>
-  <div class="nav-inner">
-    <div class="nav-logo">
+<!-- ============================================================
+     HEADER — logo, navigation, language toggle
+     ============================================================ -->
+<header id="site-header">
+  <nav class="nav-inner" aria-label="Main">
+    <a href="#hero" class="nav-logo">
       <img src="assets/icovri-logo.jpeg" alt="ICOVRI 10 Logo"/>
       <span class="nav-logo-text">ICOVRI 10</span>
-    </div>
+    </a>
+
     <ul class="nav-links">
       <li><a href="#about"       class="en-only">About</a>       <a href="#about"       class="ar-only">عن المؤتمر</a></li>
       <li><a href="#leadership"  class="en-only">Leadership</a>  <a href="#leadership"  class="ar-only">القيادة</a></li>
-      <li><a href="#speakers"   class="en-only">Speakers</a>    <a href="#speakers"   class="ar-only">المتحدثون</a></li>
+      <li><a href="#speakers"    class="en-only">Speakers</a>    <a href="#speakers"    class="ar-only">المتحدثون</a></li>
       <li><a href="#topics"      class="en-only">Topics</a>      <a href="#topics"      class="ar-only">المحاور</a></li>
       <li><a href="#fees"        class="en-only">Fees</a>        <a href="#fees"        class="ar-only">الرسوم</a></li>
-      <li><a href="#Proceedings" class="en-only">Proceedings</a> <a href="#Proceedings" class="ar-only">الملفات المؤتمارية</a></li>
+      <li><a href="#programme"   class="en-only">Proceedings</a> <a href="#programme"   class="ar-only">الملفات المؤتمارية</a></li>
       <li><a href="#publication" class="en-only">Publication</a> <a href="#publication" class="ar-only">النشر</a></li>
       <li><a href="#venues"      class="en-only">Venues</a>      <a href="#venues"      class="ar-only">المواقع</a></li>
       <li><a href="#events"      class="en-only">Events</a>      <a href="#events"      class="ar-only">الفعاليات</a></li>
       <li><a href="#abstracts"   class="en-only">Abstracts</a>   <a href="#abstracts"   class="ar-only">الملخصات</a></li>
       <li><a href="#sponsors"    class="en-only">Sponsors</a>    <a href="#sponsors"    class="ar-only">الرعاة</a></li>
-      <li>
-        <a href="#register" class="btn-primary nav-register en-only">Register</a>
-        <a href="#register" class="btn-primary nav-register ar-only">التسجيل</a>
-      </li>
     </ul>
-    <div class="hamburger" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </div>
-  </div>
-</nav>
 
-<!-- Mobile menu -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#about"       class="en-only">About</a>       <a href="#about"       class="ar-only">عن المؤتمر</a>
-  <a href="#leadership"  class="en-only">Leadership</a>  <a href="#leadership"  class="ar-only">القيادة</a>
-  <a href="#speakers"   class="en-only">Speakers</a>    <a href="#speakers"   class="ar-only">المتحدثون</a>
-  <a href="#topics"      class="en-only">Topics</a>      <a href="#topics"      class="ar-only">المحاور</a>
-  <a href="#fees"        class="en-only">Fees</a>        <a href="#fees"        class="ar-only">الرسوم</a>
-  <a href="#publication" class="en-only">Publication</a> <a href="#publication" class="ar-only">النشر</a>
-  <a href="#venues"      class="en-only">Venues</a>      <a href="#venues"      class="ar-only">المواقع</a>
-  <a href="#events"      class="en-only">Events</a>      <a href="#events"      class="ar-only">الفعاليات</a>
-  <a href="#register"    class="en-only" style="color:#c9a227;font-weight:700;">Register Now</a>
-  <a href="#register"    class="ar-only" style="color:#c9a227;font-weight:700;">سجل الآن</a>
-  <a href="#abstracts"   class="en-only">Abstracts</a>   <a href="#abstracts"   class="ar-only">الملخصات</a>
-  <a href="#sponsors"    class="en-only">Sponsors</a>    <a href="#sponsors"    class="ar-only">الرعاة</a>
-</div>
+    <div class="nav-actions">
+      <a href="#register" class="btn-primary nav-register en-only">Register</a>
+      <a href="#register" class="btn-primary nav-register ar-only">التسجيل</a>
+
+      <div class="lang-toggle" role="group" aria-label="Language / اللغة">
+        <button type="button" class="lang-btn active" id="btn-en" lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn"        id="btn-ar" lang="ar" aria-pressed="false">عربي</button>
+      </div>
+
+      <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"       class="en-only">About</a>       <a href="#about"       class="ar-only">عن المؤتمر</a>
+    <a href="#leadership"  class="en-only">Leadership</a>  <a href="#leadership"  class="ar-only">القيادة</a>
+    <a href="#speakers"    class="en-only">Speakers</a>    <a href="#speakers"    class="ar-only">المتحدثون</a>
+    <a href="#topics"      class="en-only">Topics</a>      <a href="#topics"      class="ar-only">المحاور</a>
+    <a href="#fees"        class="en-only">Fees</a>        <a href="#fees"        class="ar-only">الرسوم</a>
+    <a href="#programme"   class="en-only">Proceedings</a> <a href="#programme"   class="ar-only">الملفات المؤتمارية</a>
+    <a href="#publication" class="en-only">Publication</a> <a href="#publication" class="ar-only">النشر</a>
+    <a href="#venues"      class="en-only">Venues</a>      <a href="#venues"      class="ar-only">المواقع</a>
+    <a href="#events"      class="en-only">Events</a>      <a href="#events"      class="ar-only">الفعاليات</a>
+    <a href="#abstracts"   class="en-only">Abstracts</a>   <a href="#abstracts"   class="ar-only">الملخصات</a>
+    <a href="#sponsors"    class="en-only">Sponsors</a>    <a href="#sponsors"    class="ar-only">الرعاة</a>
+    <a href="#register" class="mobile-register en-only">Register Now</a>
+    <a href="#register" class="mobile-register ar-only">سجل الآن</a>
+  </div>
+</header>
 
 <!-- ============================================================
      HERO
@@ -139,10 +150,10 @@
     </div>
 
     <div class="hero-ctas">
-      <a href="assets/icovri10-proceedings.pdf" download class="btn-primary en-only"> Download Proceedings</a>
-      <a href="assets/icovri10-proceedings.pdf" download class="btn-primary ar-only"> تحميل الملفات المؤتمارية</a>
+      <a href="assets/icovri10-proceedings.pdf" download class="btn-primary en-only">Download Proceedings</a>
+      <a href="assets/icovri10-proceedings.pdf" download class="btn-primary ar-only">تحميل الملفات المؤتمارية</a>
       <a href="assets/schedule.pdf" download class="btn-primary en-only">Download Schedule</a>
-      <a href="assets/schedule.pdf" download class="btn-primary ar-only"> تحميل الجدول</a>
+      <a href="assets/schedule.pdf" download class="btn-primary ar-only">تحميل الجدول</a>
       <a href="#topics" class="btn-outline en-only">Conference Topics</a>
       <a href="#topics" class="btn-outline ar-only">محاور المؤتمر</a>
     </div>
@@ -186,32 +197,6 @@
 </div>
 
 <!-- ============================================================
-     LOGOS STRIP
-     ============================================================ -->
-<div class="logos-strip">
-  <div class="logos-inner">
-    <div class="logo-item" title="Ministry of Higher Education and Scientific Research">
-      <img src="assets/logo-ministry.jpeg" alt="Ministry of Higher Education" onerror="this.style.display='none'"/>
-    </div>
-    <div class="logo-item" title="National Research Centre">
-      <img src="assets/logo-nrc.jpeg" alt="National Research Centre" onerror="this.style.display='none'"/>
-    </div>
-    <div class="logo-item" title="Veterinary Research Institute">
-      <img src="assets/logo-vri.jpeg" alt="Veterinary Research Institute" onerror="this.style.display='none'"/>
-    </div>
-    <div class="logo-item" title="ICOVRI 10">
-      <img src="assets/logo-icovri.jpeg" alt="ICOVRI 10" onerror="this.style.display='none'"/>
-    </div>
-    <div class="logo-item" title="Advanced Veterinary Medical Association">
-      <img src="assets/logo-avma.jpeg" alt="AVMA" onerror="this.style.display='none'"/>
-    </div>
-    <div class="logo-item" title="Egyptian Veterinary Association for Buffalo Development">
-      <img src="assets/logo-evabd.jpeg" alt="EVABD" onerror="this.style.display='none'"/>
-    </div>
-  </div>
-</div>
-
-<!-- ============================================================
      ABOUT
      ============================================================ -->
 <section id="about">
@@ -222,8 +207,8 @@
       <div class="about-text">
         <div class="section-label en-only">Message from the Chairman</div>
         <div class="section-label ar-only">كلمة رئيس المؤتمر</div>
-        <h2 class="section-title en-only" style="font-size:clamp(28px,3.8vw,48px);">Welcome to <em>ICOVRI 10</em></h2>
-        <h2 class="section-title ar-only">أهلاً بكم في <em>المؤتمر العاشر</em></h2>
+        <h2 class="section-title section-title--md en-only">Welcome to <em>ICOVRI 10</em></h2>
+        <h2 class="section-title section-title--md ar-only">أهلاً بكم في <em>المؤتمر العاشر</em></h2>
         <div class="section-divider"></div>
 
         <div class="en-only">
@@ -800,15 +785,14 @@
 <section id="programme">
   <div class="section-inner">
     <div class="programme-banner fade-in">
-      <div class="programme-icon"></div>
       <div class="programme-text">
         <h3 class="en-only">Conference Proceedings</h3>
         <h3 class="ar-only">الملفات المؤتمارية</h3>
         <p class="en-only">Download the full ICOVRI 10 proceedings including all sessions, speakers, and schedule.</p>
         <p class="ar-only">حمّل الملفات الكاملة لمؤتمر ICOVRI 10 بما يشمل جميع الجلسات والمتحدثين والجدول الزمني.</p>
       </div>
-      <a href="assets/icovri10-proceedings.pdf" download class="programme-btn en-only"> Download PDF</a>
-      <a href="assets/icovri10-proceedings.pdf" download class="programme-btn ar-only"> تحميل PDF</a>
+      <a href="assets/icovri10-proceedings.pdf" download class="programme-btn en-only">Download PDF</a>
+      <a href="assets/icovri10-proceedings.pdf" download class="programme-btn ar-only">تحميل PDF</a>
     </div>
   </div>
 </section>
@@ -1091,8 +1075,8 @@
       <div class="register-info">
         <div class="section-label en-only">Join Us</div>
         <div class="section-label ar-only">انضم إلينا</div>
-        <h2 class="section-title en-only" style="font-size:clamp(24px,3.5vw,42px);">Register for <em>ICOVRI 10</em></h2>
-        <h2 class="section-title ar-only" style="font-size:clamp(24px,3.5vw,42px);">سجل في <em>المؤتمر العاشر</em></h2>
+        <h2 class="section-title section-title--sm en-only">Register for <em>ICOVRI 10</em></h2>
+        <h2 class="section-title section-title--sm ar-only">سجل في <em>المؤتمر العاشر</em></h2>
         <div class="section-divider"></div>
         <p class="en-only">Secure your place at Egypt's premier veterinary science conference. Registration is open for Egyptian and international participants.</p>
         <p class="ar-only">احجز مكانك في أبرز مؤتمر للعلوم البيطرية في مصر.</p>
@@ -1442,7 +1426,8 @@
           <li><a href="#register"    class="en-only">Register</a>             <a href="#register"    class="ar-only">التسجيل</a></li>
           <li><a href="#abstracts"   class="en-only">Abstract Submission</a>  <a href="#abstracts"   class="ar-only">تقديم الملخصات</a></li>
           <li><a href="#sponsors"    class="en-only">Sponsors</a>              <a href="#sponsors"    class="ar-only">الرعاة</a></li>
-          <li><a href="assets/icovri10-program.pdf" download class="en-only"> Conference Programme</a><a href="assets/icovri10-program.pdf" download class="ar-only"> برنامج المؤتمر</a></li>
+          <li><a href="assets/icovri10-proceedings.pdf" download class="en-only">Conference Proceedings (PDF)</a> <a href="assets/icovri10-proceedings.pdf" download class="ar-only">الملفات المؤتمارية (PDF)</a></li>
+          <li><a href="assets/schedule.pdf" download class="en-only">Conference Schedule (PDF)</a> <a href="assets/schedule.pdf" download class="ar-only">جدول المؤتمر (PDF)</a></li>
         </ul>
       </div>
 
@@ -1454,7 +1439,7 @@
           <li><a href="https://wa.me/201066474245" target="_blank" rel="noopener" dir="ltr" class="en-only">+20 10 66474245 (Registration)</a>  <a href="https://wa.me/201066474245" target="_blank" rel="noopener" dir="ltr" class="ar-only">+20 10 66474245 (تسجيل)</a></li>
           <li><a href="https://wa.me/201003489362" target="_blank" rel="noopener" dir="ltr" class="en-only">+20 10 03489362 (Inquiries)</a>     <a href="https://wa.me/201003489362" target="_blank" rel="noopener" dir="ltr" class="ar-only">+20 10 03489362 (استفسارات)</a></li>
           <li><a href="https://wa.me/201015154261" target="_blank" rel="noopener" dir="ltr" class="en-only">+20 10 15154261 (Abstracts)</a>     <a href="https://wa.me/201015154261" target="_blank" rel="noopener" dir="ltr" class="ar-only">+20 10 15154261 (ملخصات)</a></li>
-          <li><a href="https://www.facebook.com/share/19C4FUxLce/" target="_blank" rel="noopener" class="en-only">Facebook Page</a>              <a href="https://www.facebook.com/share/19C4FUxLce/" target="_blank" rel="noopener" class="ar-only">📘 صفحة فيسبوك</a></li>
+          <li><a href="https://www.facebook.com/share/19C4FUxLce/" target="_blank" rel="noopener" class="en-only">Facebook Page</a>              <a href="https://www.facebook.com/share/19C4FUxLce/" target="_blank" rel="noopener" class="ar-only">صفحة فيسبوك</a></li>
         </ul>
       </div>
     </div>

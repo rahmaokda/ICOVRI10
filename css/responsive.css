@@ -3,9 +3,6 @@
    =========================== */
 
 @media (max-width: 900px) {
-  .nav-links   { display: none; }
-  .hamburger   { display: flex; }
-
   .about-grid,
   .fees-grid,
   .register-layout,
