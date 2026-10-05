@@ -136,7 +136,13 @@ body.ar .fees-note {
   transform: translateY(-2px);
 }
 
-.fees-wa-icon { font-size: 20px; }
+.fees-contact-btn .icon-img {
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  background: #ffffff;
+  border-radius: 50%;
+}
 
 .fees-contact-num {
   font-size: 15px;

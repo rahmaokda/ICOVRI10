@@ -46,6 +46,20 @@ footer {
 
 .footer-col ul li { margin-bottom: 10px; }
 
+.footer-col ul li.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-contact .icon-img {
+  width: 26px;
+  height: 26px;
+  padding: 4px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
 .footer-col ul li a {
   color: #083b45;
   text-decoration: none;

@@ -59,7 +59,7 @@
 
 .abstract-contact-detail:last-child { margin-bottom: 0; }
 
-.abstract-contact-icon { font-size: 15px; flex-shrink: 0; }
+.abstract-contact-icon { display: inline-flex; flex-shrink: 0; }
 
 .abstract-contact-detail a {
   color: #0a8fa8;

@@ -111,6 +111,15 @@ section {
   color: var(--gold);
 }
 
+/* ---- Contact icons (WhatsApp / Gmail / location) ---- */
+.icon-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
 /* ---- Toast ---- */
 #toast {
   position: fixed;

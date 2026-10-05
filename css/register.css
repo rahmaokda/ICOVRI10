@@ -40,8 +40,9 @@
 .contact-icon {
   width: 36px;
   height: 36px;
-  background: rgba(26, 184, 212, .12);
+  background: #ffffff;
   border: 1px solid var(--border);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,12 +57,6 @@
   font-size: 15px;
   font-weight: 900;
   font-family: 'Georgia', serif;
-}
-
-.contact-icon.whatsapp {
-  background: #25d366;
-  border-color: #25d366;
-  font-size: 17px;
 }
 
 .contact-item a {

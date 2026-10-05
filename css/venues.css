@@ -82,6 +82,15 @@
   text-align: center;
 }
 
+.venue-directions .icon-img {
+  width: 16px;
+  height: 16px;
+  margin-inline-end: 8px;
+  vertical-align: -3px;
+}
+
+.venue-directions:hover .icon-img { filter: invert(1); }
+
 .venue-directions:hover {
   background: var(--teal-bright);
   color: #ffffff;
