@@ -264,11 +264,6 @@ body.ar .form-upload-notice {
   gap: 0;
 }
 
-.gform-cta-icon {
-  font-size: 52px;
-  margin-bottom: 20px;
-}
-
 .gform-cta h3 {
   font-family: 'Playfair Display', serif;
   font-size: 26px;
