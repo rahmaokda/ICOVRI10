@@ -258,6 +258,11 @@ body.ar .announcement-close {
   flex-wrap: wrap;
 }
 
+.programme-banner + .programme-banner { margin-top: 24px; }
+
+.photos-banner { border-left-color: var(--teal); }
+body.ar .photos-banner { border-right-color: var(--teal); }
+
 body.ar .programme-banner {
   border-left: 1px solid var(--border);
   border-right: 6px solid #c9a227;
@@ -304,12 +309,35 @@ body.ar .programme-banner {
   body.ar .programme-banner { text-align: center; }
 }
 
+.announcement-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.announcement-photos-btn {
+  display: inline-block;
+  background: #c9a227;
+  color: #083b45;
+  padding: 10px 26px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.announcement-photos-btn:hover { background: #e8c96a; transform: translateY(-2px); }
+
 .announcement-download-btn {
   display: inline-block;
-  margin-left: 12px;
   background: #083b45;
   color: #e8c96a;
-  padding: 4px 14px;
+  padding: 10px 18px;
   font-weight: 700;
   font-size: 13px;
   text-decoration: none;
@@ -320,4 +348,3 @@ body.ar .programme-banner {
 
 .announcement-download-btn:hover { background: #052930; }
 
-body.ar .announcement-download-btn { margin-left: 0; margin-right: 12px; }
